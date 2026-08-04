@@ -20,3 +20,8 @@ function add(a, b){
 }
 add(5, 10);
 add(20, 30);
+
+///function with three parameters
+function multiply(a, b, c) {
+    console.log(a * b * c);
+}
