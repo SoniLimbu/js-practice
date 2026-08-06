@@ -27,3 +27,60 @@ console.log(fruits);
 ///You can remove the first element from an array using the shift() method. The shift() method removes the first element from an array and returns that removed element. Here's how you can remove the first element from the fruits array:
 fruits.shift();
 console.log(fruits);
+
+///Loop through array
+///You can loop through the elements of an array using a for loop. Here's how you can iterate through the fruits array:
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+
+///sum of array 
+let numbers = [1, 2, 3, 4, 5];
+let sum = 0;
+for ( let i = 0; i< numbers.length; i ++) {
+    sum += numbers [i];
+
+}
+console.log("sum = " + sum);
+
+ //sum of array using function
+function sumArray(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) { 
+        sum += arr[i];
+    }
+    return sum;
+}
+let numbers = [1, 2, 3, 4, 5];
+let result = sumArray(numbers);
+console.log("sum = " + result);
+
+///Find the largest number
+let marks = [10,20,30,40,50];
+let largest = marks[0];
+for (let i =1; i <marks.length; i ++ )
+{
+    if (marks[i] > largest) {
+        largest = marks[i] ;
+
+    }
+}
+
+console.log("largest =",largest);
+
+///include
+console.log(fruits.includes("Apple"));
+console.log(fruits.includes("banana"));
+
+///indexof 
+console.log(fruits.indexOf("banana"));
+
+//Reserve Array 
+console.log(numbers.reverse());
+
+//sort Array 
+ let ages = [10,20,30,40,50];
+ages.sort(function(a,b) {
+    return a-b;
+});
